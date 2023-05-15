@@ -45,7 +45,6 @@ function App() {
               <li className='m-2'>React</li>
               <li className='m-2'>TailwindCss</li>
               <li className='m-2'>Vite</li>
-
             </ol>
           </div>
       </div>
