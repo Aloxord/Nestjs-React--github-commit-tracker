@@ -26,6 +26,29 @@ function App() {
             ))
         }
       </ul>
+
+      <div className='h-auto  p-2 mx-auto bg-white rounded-xl shadow-lg grid grid-cols-2 bg-gray-600'>
+          <div className='center'>
+            <h3 className='text-lg'>Methods worked in Backend:</h3>
+            <ol className='m-4'>
+            <li className='m-2'>getCommits()</li>
+            <li className='m-2'>requestCommits()</li>
+            <li className='m-2'>mapCommits()</li>
+            </ol>
+          </div>
+          <div>
+            <h3 className='text-lg'>Technologies used:</h3>
+            <ol className='m-4'>
+              <li className='m-2'>Nestjs</li>
+              <li className='m-2'>Axios</li>
+              <li className='m-2'>Octokit</li>
+              <li className='m-2'>React</li>
+              <li className='m-2'>TailwindCss</li>
+              <li className='m-2'>Vite</li>
+
+            </ol>
+          </div>
+      </div>
     </div>
   )
 }
