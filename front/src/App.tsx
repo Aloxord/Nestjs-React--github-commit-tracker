@@ -38,7 +38,7 @@ function App() {
           </div>
           <div>
             <h3 className='text-lg'>Technologies used:</h3>
-            <ol className='m-4'>
+            <ol className='m-4 grid grid-cols-2'>
               <li className='m-2'>Nestjs</li>
               <li className='m-2'>Axios</li>
               <li className='m-2'>Octokit</li>
