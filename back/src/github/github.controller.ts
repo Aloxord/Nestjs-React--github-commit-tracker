@@ -7,7 +7,7 @@ export class GithubController {
   constructor(private readonly githubService: GithubService) {}
 
   @Get()
-  getCommits() {
+  getCommits():Promise<CommitsType> {
     return this.githubService.getCommits();
   }
 }

@@ -12,7 +12,40 @@ export class GithubService {
     private readonly octokitService: OctokitService
   ){}
 
-  async getCommits(): {
+  async getCommits(): Promise<CommitsType> {
+
+    const { user, repo } = githubConf;
+
+    const {
+      data: commits
+    } = await this.requestCommits(
+      user,
+      repo
+    )
+
+    console.log(commits[0].commit.author);
+
+    const mappedCommits = this.mapCommits(commits);
+
+    return mappedCommits;
+  }
+
+
+  protected requestCommits(userName:string,repoName:string){
+    return this.octokitService.request(`GET /repos/${userName}/${repoName}/commits`,{
+      owner: userName,
+      repo: repoName,
+    })
+  }
+
+  protected mapCommits(commits: Array<any>): CommitsType{
+    const commitsList = commits.map(({commit}) => ({
+      author: 'aasd',
+      message: commit.message,
+      url: commit.message
+    }));
+
+    return {commitsList}
   }
 
 }
