@@ -9,7 +9,9 @@ function App() {
   useEffect(()=>{
     getCommits()
       .then(({ data }) => {
-        setCommits(data.commitsList);
+        const { commitsList } = data;
+
+        setCommits(commitsList);
       })
   },[]);
 
