@@ -23,8 +23,6 @@ export class GithubService {
       repo
     )
 
-    console.log(commits[0].commit.author);
-
     const mappedCommits = this.mapCommits(commits);
 
     return mappedCommits;
