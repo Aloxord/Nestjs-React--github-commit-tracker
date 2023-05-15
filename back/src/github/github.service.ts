@@ -38,7 +38,7 @@ export class GithubService {
 
   protected mapCommits(commits: Array<any>): CommitsType{
     const commitsList = commits.map(({commit}) => ({
-      author: 'aasd',
+      author: commit.author.name,
       message: commit.message,
       url: commit.message
     }));
