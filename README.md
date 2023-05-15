@@ -27,7 +27,7 @@ You can see the commits of any public repository in a simple webview.
 
 ### Executing program
 
-* To execute the app, first run the backend side, going into the `back` folder and executing:
+* To execute the app in a terminal(linux,macOs) or cmd(windows), first run the backend side, going into the `back` folder and executing:
 ```
 yarn start
 ```
@@ -36,6 +36,8 @@ yarn start
 ```
 yarn dev
 ```
+
+* You should see in the terminal the url and port where the project is running.
 
 ## Authors
 
