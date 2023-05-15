@@ -1,10 +1,17 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { GithubModule } from './github/github.module';
+import { OctokitModule } from 'nestjs-octokit';
+import githubConf from './configs/github'
 
 @Module({
-  imports: [],
-  controllers: [AppController],
-  providers: [AppService],
+  imports: [
+    OctokitModule.forRoot({
+      isGlobal: true,
+      octokitOptions:{
+        auth: githubConf.auth.token
+      }
+    }),
+    GithubModule
+  ]
 })
 export class AppModule {}
