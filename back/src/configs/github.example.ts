@@ -3,5 +3,5 @@ export default {
         token: '************************'
     },
     user: 'Aloxord',
-    repo: 'simulator',
+    repo: 'githubCommitTracker',
 };
