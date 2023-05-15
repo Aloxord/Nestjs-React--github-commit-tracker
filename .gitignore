@@ -35,6 +35,9 @@
 !/back/.vscode/launch.json
 !/back/.vscode/extensions.json
 
+#private configs
+/back/src/configs/github.ts
+
 ## Front ##
 
 # Logs
