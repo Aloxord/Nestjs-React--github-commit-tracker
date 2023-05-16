@@ -8,6 +8,8 @@ You can see the commits of any public repository in a simple webview.
 
 ### Dependencies
 
+* Git
+
 * Docker
 
 ### Installing
