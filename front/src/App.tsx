@@ -13,7 +13,7 @@ function App() {
 
         setCommits(commitsList);
       })
-  },[]);
+  });
 
   return (
     <div className='mx-auto h-full bg-gray-200 rounded-xl shadow border p-8 overflow-hidden'>

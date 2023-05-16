@@ -29,6 +29,8 @@ docker compose up
 
 * You should wait in the terminal the url and port where the project is running, and go to `http://localhost:5173`.
 
+* To stop the execution of the app press `ctrl + c` keys
+
 ## Authors
 
 [@Aloxord](https://twitter.com/aloxord)
