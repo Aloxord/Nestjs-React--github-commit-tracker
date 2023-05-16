@@ -35,4 +35,4 @@ docker compose up
 
 ## Authors
 
-[@Aloxord](https://twitter.com/aloxord)
+[@Aloxord](https://github.com/aloxord)
